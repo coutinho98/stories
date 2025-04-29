@@ -126,6 +126,26 @@ exports.Prisma.UserScalarFieldEnum = {
   name: 'name'
 };
 
+exports.Prisma.StoryScalarFieldEnum = {
+  id: 'id',
+  title: 'title',
+  maxParts: 'maxParts',
+  createdById: 'createdById'
+};
+
+exports.Prisma.StoryPartScalarFieldEnum = {
+  id: 'id',
+  content: 'content',
+  storyId: 'storyId'
+};
+
+exports.Prisma.ReactionScalarFieldEnum = {
+  id: 'id',
+  type: 'type',
+  userId: 'userId',
+  storyId: 'storyId'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -138,7 +158,10 @@ exports.Prisma.QueryMode = {
 
 
 exports.Prisma.ModelName = {
-  User: 'User'
+  User: 'User',
+  Story: 'Story',
+  StoryPart: 'StoryPart',
+  Reaction: 'Reaction'
 };
 
 /**
